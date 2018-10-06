@@ -1,0 +1,2 @@
+# projectMindTrigger
+Home automation project

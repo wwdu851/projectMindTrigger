@@ -1,0 +1,49 @@
+PODS:
+  - 1PasswordExtension (1.8.4)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AVOSCloud (4.2.0)
+  - Spark-SDK (0.6.0):
+    - Spark-SDK/Helpers (= 0.6.0)
+    - Spark-SDK/SDK (= 0.6.0)
+  - Spark-SDK/Helpers (0.6.0)
+  - Spark-SDK/SDK (0.6.0):
+    - AFNetworking (~> 3.0)
+    - Spark-SDK/Helpers
+  - SparkSetup (0.7.0):
+    - SparkSetup/Comm (= 0.7.0)
+    - SparkSetup/Core (= 0.7.0)
+  - SparkSetup/Comm (0.7.0)
+  - SparkSetup/Core (0.7.0):
+    - 1PasswordExtension
+    - Spark-SDK
+    - SparkSetup/Comm
+
+DEPENDENCIES:
+  - AVOSCloud
+  - Spark-SDK
+  - SparkSetup
+
+SPEC CHECKSUMS:
+  1PasswordExtension: e775a29310c65851e5a6cec1afc349ab4e334e47
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AVOSCloud: 5446ad0320f4942cce1a036d131992cd1115db99
+  Spark-SDK: abb1436245a3e43cbc00cfdaddcad66e047666ef
+  SparkSetup: 313503482dd322529c1f113ff47d44ea30fabc9c
+
+PODFILE CHECKSUM: 268a233743d51370a75f6d190d5d09a77c075c77
+
+COCOAPODS: 1.0.1

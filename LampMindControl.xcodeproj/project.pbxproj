@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D13E1AD1DF1E05B00AD7BA0 /* SwitchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13E1AC1DF1E05B00AD7BA0 /* SwitchTableViewController.swift */; };
+		3D13E1AF1DF1FCEF00AD7BA0 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13E1AE1DF1FCEF00AD7BA0 /* DataStorage.swift */; };
+		3D15329E1E4BF59100992794 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15329D1E4BF59100992794 /* SettingsViewController.swift */; };
+		3D16BC811DF8D15A00E6A5E0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D16BC801DF8D15A00E6A5E0 /* MapKit.framework */; };
+		3D16BCC21DF8F29500E6A5E0 /* dateConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D16BCC11DF8F29500E6A5E0 /* dateConfiguration.swift */; };
+		3D33B41D1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33B41C1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift */; };
+		3D421BCE1E689F7D0091BB8C /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF82F231E42B9F200FA4C9A /* SleepViewController.swift */; };
+		3D53B1E41DF88F0500E7EBDF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D53B1E31DF88F0500E7EBDF /* CoreLocation.framework */; };
+		3D840D5D1DEBE84D003DBD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D5C1DEBE84D003DBD32 /* AppDelegate.swift */; };
+		3D840D5F1DEBE84D003DBD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D5E1DEBE84D003DBD32 /* ViewController.swift */; };
+		3D840D621DEBE84D003DBD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D840D601DEBE84D003DBD32 /* Main.storyboard */; };
+		3D840D651DEBE84D003DBD32 /* LampMindControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D631DEBE84D003DBD32 /* LampMindControl.xcdatamodeld */; };
+		3D840D671DEBE84D003DBD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D840D661DEBE84D003DBD32 /* Assets.xcassets */; };
+		3D840D6A1DEBE84D003DBD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D840D681DEBE84D003DBD32 /* LaunchScreen.storyboard */; };
+		3D840D751DEBE84D003DBD32 /* LampMindControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D741DEBE84D003DBD32 /* LampMindControlTests.swift */; };
+		3D840D801DEBE84D003DBD32 /* LampMindControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D7F1DEBE84D003DBD32 /* LampMindControlUITests.swift */; };
+		3D93C21420C5171500622E4D /* ngt.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3D93C21320C5171500622E4D /* ngt.aif */; };
+		3DA507A81EE86F3B00C846D8 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA507A71EE86F3B00C846D8 /* HomeKit.framework */; };
+		3DA95CFC1E46DC560080B5AB /* Guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DA95CFB1E46DC560080B5AB /* Guitar.mp3 */; };
+		3DA95CFE1E46DC5C0080B5AB /* Ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DA95CFD1E46DC5C0080B5AB /* Ring.mp3 */; };
+		3DA95D001E46DCA70080B5AB /* alarmAudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA95CFF1E46DCA70080B5AB /* alarmAudioPlay.swift */; };
+		3DCB5BBC1DEE9A3B00566786 /* tabBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB5BBB1DEE9A3B00566786 /* tabBarSettings.swift */; };
+		3DD371C91E62A93100522378 /* notificationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD371C81E62A93100522378 /* notificationConfiguration.swift */; };
+		3DF82F221E42999800FA4C9A /* ProximityDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF82F211E42999800FA4C9A /* ProximityDetect.swift */; };
+		3DF82F241E42B9F200FA4C9A /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF82F231E42B9F200FA4C9A /* SleepViewController.swift */; };
+		7698567BC81B88EEAA8E0883 /* Pods_LampMindControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B7FDF1EF19BCC0A504408C /* Pods_LampMindControl.framework */; };
+		770CE29CE7F1B762AA9CFECC /* Pods_LampMindControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73C621C035D8897041F203C /* Pods_LampMindControlUITests.framework */; };
+		B23D76639FFE7320F3939C82 /* Pods_LampMindControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB5392E426F3AE1AAA49A67 /* Pods_LampMindControlTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D840D711DEBE84D003DBD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D840D511DEBE84D003DBD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D840D581DEBE84D003DBD32;
+			remoteInfo = LampMindControl;
+		};
+		3D840D7C1DEBE84D003DBD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D840D511DEBE84D003DBD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D840D581DEBE84D003DBD32;
+			remoteInfo = LampMindControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11B7FDF1EF19BCC0A504408C /* Pods_LampMindControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LampMindControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2A197FB0AB91B9F90C263F /* Pods-LampMindControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControl/Pods-LampMindControl.debug.xcconfig"; sourceTree = "<group>"; };
+		3D13E1AC1DF1E05B00AD7BA0 /* SwitchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewController.swift; sourceTree = "<group>"; };
+		3D13E1AE1DF1FCEF00AD7BA0 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		3D15329D1E4BF59100992794 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3D16BC801DF8D15A00E6A5E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D16BCC11DF8F29500E6A5E0 /* dateConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateConfiguration.swift; sourceTree = "<group>"; };
+		3D33B41C1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailTableViewController.swift; sourceTree = "<group>"; };
+		3D53B1E31DF88F0500E7EBDF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D840D591DEBE84D003DBD32 /* LampMindControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LampMindControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D840D5C1DEBE84D003DBD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D840D5E1DEBE84D003DBD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D840D611DEBE84D003DBD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D840D641DEBE84D003DBD32 /* LampMindControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LampMindControl.xcdatamodel; sourceTree = "<group>"; };
+		3D840D661DEBE84D003DBD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D840D691DEBE84D003DBD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D840D6B1DEBE84D003DBD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D840D701DEBE84D003DBD32 /* LampMindControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LampMindControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D840D741DEBE84D003DBD32 /* LampMindControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampMindControlTests.swift; sourceTree = "<group>"; };
+		3D840D761DEBE84D003DBD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D840D7B1DEBE84D003DBD32 /* LampMindControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LampMindControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D840D7F1DEBE84D003DBD32 /* LampMindControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampMindControlUITests.swift; sourceTree = "<group>"; };
+		3D840D811DEBE84D003DBD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D93C21320C5171500622E4D /* ngt.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = ngt.aif; sourceTree = "<group>"; };
+		3DA507A71EE86F3B00C846D8 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		3DA507A91EE86F4500C846D8 /* LampMindControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LampMindControl.entitlements; sourceTree = "<group>"; };
+		3DA95CFB1E46DC560080B5AB /* Guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guitar.mp3; sourceTree = "<group>"; };
+		3DA95CFD1E46DC5C0080B5AB /* Ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ring.mp3; sourceTree = "<group>"; };
+		3DA95CFF1E46DCA70080B5AB /* alarmAudioPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alarmAudioPlay.swift; sourceTree = "<group>"; };
+		3DCB5BBB1DEE9A3B00566786 /* tabBarSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabBarSettings.swift; sourceTree = "<group>"; };
+		3DD371C81E62A93100522378 /* notificationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationConfiguration.swift; sourceTree = "<group>"; };
+		3DF81B671DF9D8E300866E0F /* LampMindControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LampMindControl-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DF82F211E42999800FA4C9A /* ProximityDetect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityDetect.swift; sourceTree = "<group>"; };
+		3DF82F231E42B9F200FA4C9A /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		46CF51E2AC6954BED6108AA4 /* Pods-LampMindControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControlUITests/Pods-LampMindControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A73C621C035D8897041F203C /* Pods_LampMindControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LampMindControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64D24D4946C11A800136C4A /* Pods-LampMindControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControl/Pods-LampMindControl.release.xcconfig"; sourceTree = "<group>"; };
+		CEB5392E426F3AE1AAA49A67 /* Pods_LampMindControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LampMindControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F07D74364BC2CE1AE0C11E /* Pods-LampMindControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControlTests/Pods-LampMindControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFBEBB3C98A0178C103A291F /* Pods-LampMindControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControlTests/Pods-LampMindControlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8664193A2E5F46902E6494C /* Pods-LampMindControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LampMindControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LampMindControlUITests/Pods-LampMindControlUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D840D561DEBE84D003DBD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA507A81EE86F3B00C846D8 /* HomeKit.framework in Frameworks */,
+				3D53B1E41DF88F0500E7EBDF /* CoreLocation.framework in Frameworks */,
+				3D16BC811DF8D15A00E6A5E0 /* MapKit.framework in Frameworks */,
+				7698567BC81B88EEAA8E0883 /* Pods_LampMindControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D6D1DEBE84D003DBD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23D76639FFE7320F3939C82 /* Pods_LampMindControlTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D781DEBE84D003DBD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770CE29CE7F1B762AA9CFECC /* Pods_LampMindControlUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D840D501DEBE84D003DBD32 = {
+			isa = PBXGroup;
+			children = (
+				3D840D5B1DEBE84D003DBD32 /* LampMindControl */,
+				3D840D731DEBE84D003DBD32 /* LampMindControlTests */,
+				3D840D7E1DEBE84D003DBD32 /* LampMindControlUITests */,
+				3D840D5A1DEBE84D003DBD32 /* Products */,
+				55C4AE0ACE31F15C38300823 /* Frameworks */,
+				D039FBCBC895CCFD22D89877 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3D840D5A1DEBE84D003DBD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D840D591DEBE84D003DBD32 /* LampMindControl.app */,
+				3D840D701DEBE84D003DBD32 /* LampMindControlTests.xctest */,
+				3D840D7B1DEBE84D003DBD32 /* LampMindControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D840D5B1DEBE84D003DBD32 /* LampMindControl */ = {
+			isa = PBXGroup;
+			children = (
+				3DA507A91EE86F4500C846D8 /* LampMindControl.entitlements */,
+				3D93C21320C5171500622E4D /* ngt.aif */,
+				3DA95CFB1E46DC560080B5AB /* Guitar.mp3 */,
+				3DA95CFD1E46DC5C0080B5AB /* Ring.mp3 */,
+				3D840D5C1DEBE84D003DBD32 /* AppDelegate.swift */,
+				3D16BCC11DF8F29500E6A5E0 /* dateConfiguration.swift */,
+				3DCB5BBB1DEE9A3B00566786 /* tabBarSettings.swift */,
+				3D840D5E1DEBE84D003DBD32 /* ViewController.swift */,
+				3D840D601DEBE84D003DBD32 /* Main.storyboard */,
+				3D840D661DEBE84D003DBD32 /* Assets.xcassets */,
+				3D840D681DEBE84D003DBD32 /* LaunchScreen.storyboard */,
+				3D840D6B1DEBE84D003DBD32 /* Info.plist */,
+				3D840D631DEBE84D003DBD32 /* LampMindControl.xcdatamodeld */,
+				3D13E1AC1DF1E05B00AD7BA0 /* SwitchTableViewController.swift */,
+				3D13E1AE1DF1FCEF00AD7BA0 /* DataStorage.swift */,
+				3DF81B671DF9D8E300866E0F /* LampMindControl-Bridging-Header.h */,
+				3DF82F211E42999800FA4C9A /* ProximityDetect.swift */,
+				3DF82F231E42B9F200FA4C9A /* SleepViewController.swift */,
+				3DA95CFF1E46DCA70080B5AB /* alarmAudioPlay.swift */,
+				3D15329D1E4BF59100992794 /* SettingsViewController.swift */,
+				3D33B41C1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift */,
+				3DD371C81E62A93100522378 /* notificationConfiguration.swift */,
+			);
+			path = LampMindControl;
+			sourceTree = "<group>";
+		};
+		3D840D731DEBE84D003DBD32 /* LampMindControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D840D741DEBE84D003DBD32 /* LampMindControlTests.swift */,
+				3D840D761DEBE84D003DBD32 /* Info.plist */,
+			);
+			path = LampMindControlTests;
+			sourceTree = "<group>";
+		};
+		3D840D7E1DEBE84D003DBD32 /* LampMindControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D840D7F1DEBE84D003DBD32 /* LampMindControlUITests.swift */,
+				3D840D811DEBE84D003DBD32 /* Info.plist */,
+			);
+			path = LampMindControlUITests;
+			sourceTree = "<group>";
+		};
+		55C4AE0ACE31F15C38300823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA507A71EE86F3B00C846D8 /* HomeKit.framework */,
+				3D16BC801DF8D15A00E6A5E0 /* MapKit.framework */,
+				3D53B1E31DF88F0500E7EBDF /* CoreLocation.framework */,
+				11B7FDF1EF19BCC0A504408C /* Pods_LampMindControl.framework */,
+				CEB5392E426F3AE1AAA49A67 /* Pods_LampMindControlTests.framework */,
+				A73C621C035D8897041F203C /* Pods_LampMindControlUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D039FBCBC895CCFD22D89877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B2A197FB0AB91B9F90C263F /* Pods-LampMindControl.debug.xcconfig */,
+				C64D24D4946C11A800136C4A /* Pods-LampMindControl.release.xcconfig */,
+				EFBEBB3C98A0178C103A291F /* Pods-LampMindControlTests.debug.xcconfig */,
+				E3F07D74364BC2CE1AE0C11E /* Pods-LampMindControlTests.release.xcconfig */,
+				46CF51E2AC6954BED6108AA4 /* Pods-LampMindControlUITests.debug.xcconfig */,
+				F8664193A2E5F46902E6494C /* Pods-LampMindControlUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D840D581DEBE84D003DBD32 /* LampMindControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D840D841DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControl" */;
+			buildPhases = (
+				CD46F6292D887D45A54C66F7 /* [CP] Check Pods Manifest.lock */,
+				3D840D551DEBE84D003DBD32 /* Sources */,
+				3D840D561DEBE84D003DBD32 /* Frameworks */,
+				3D840D571DEBE84D003DBD32 /* Resources */,
+				F9F62BB5C0F72EEB77396C9D /* [CP] Embed Pods Frameworks */,
+				D1FD3E3A03533D5B21DCB44E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LampMindControl;
+			productName = LampMindControl;
+			productReference = 3D840D591DEBE84D003DBD32 /* LampMindControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D840D6F1DEBE84D003DBD32 /* LampMindControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D840D871DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControlTests" */;
+			buildPhases = (
+				882D1FB9680E2C98292C41BB /* [CP] Check Pods Manifest.lock */,
+				3D840D6C1DEBE84D003DBD32 /* Sources */,
+				3D840D6D1DEBE84D003DBD32 /* Frameworks */,
+				3D840D6E1DEBE84D003DBD32 /* Resources */,
+				2762B4243E1A335BF28567F1 /* [CP] Embed Pods Frameworks */,
+				231036D97574610BC0BB83FC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D840D721DEBE84D003DBD32 /* PBXTargetDependency */,
+			);
+			name = LampMindControlTests;
+			productName = LampMindControlTests;
+			productReference = 3D840D701DEBE84D003DBD32 /* LampMindControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D840D7A1DEBE84D003DBD32 /* LampMindControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D840D8A1DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControlUITests" */;
+			buildPhases = (
+				268CAE71D0B975BBF3024917 /* [CP] Check Pods Manifest.lock */,
+				3D840D771DEBE84D003DBD32 /* Sources */,
+				3D840D781DEBE84D003DBD32 /* Frameworks */,
+				3D840D791DEBE84D003DBD32 /* Resources */,
+				9C2C76F28B9BAAA2FBC394A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D840D7D1DEBE84D003DBD32 /* PBXTargetDependency */,
+			);
+			name = LampMindControlUITests;
+			productName = LampMindControlUITests;
+			productReference = 3D840D7B1DEBE84D003DBD32 /* LampMindControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D840D511DEBE84D003DBD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "William Du";
+				TargetAttributes = {
+					3D840D581DEBE84D003DBD32 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5W7CU97HPW;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3D840D6F1DEBE84D003DBD32 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 88667ECK2U;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D840D581DEBE84D003DBD32;
+					};
+					3D840D7A1DEBE84D003DBD32 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 88667ECK2U;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D840D581DEBE84D003DBD32;
+					};
+				};
+			};
+			buildConfigurationList = 3D840D541DEBE84D003DBD32 /* Build configuration list for PBXProject "LampMindControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D840D501DEBE84D003DBD32;
+			productRefGroup = 3D840D5A1DEBE84D003DBD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D840D581DEBE84D003DBD32 /* LampMindControl */,
+				3D840D6F1DEBE84D003DBD32 /* LampMindControlTests */,
+				3D840D7A1DEBE84D003DBD32 /* LampMindControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D840D571DEBE84D003DBD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA95CFC1E46DC560080B5AB /* Guitar.mp3 in Resources */,
+				3D93C21420C5171500622E4D /* ngt.aif in Resources */,
+				3D840D6A1DEBE84D003DBD32 /* LaunchScreen.storyboard in Resources */,
+				3DA95CFE1E46DC5C0080B5AB /* Ring.mp3 in Resources */,
+				3D840D671DEBE84D003DBD32 /* Assets.xcassets in Resources */,
+				3D840D621DEBE84D003DBD32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D6E1DEBE84D003DBD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D791DEBE84D003DBD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		231036D97574610BC0BB83FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LampMindControlTests/Pods-LampMindControlTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		268CAE71D0B975BBF3024917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2762B4243E1A335BF28567F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LampMindControlTests/Pods-LampMindControlTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882D1FB9680E2C98292C41BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2C76F28B9BAAA2FBC394A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LampMindControlUITests/Pods-LampMindControlUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD46F6292D887D45A54C66F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1FD3E3A03533D5B21DCB44E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LampMindControl/Pods-LampMindControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F62BB5C0F72EEB77396C9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LampMindControl/Pods-LampMindControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D840D551DEBE84D003DBD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB5BBC1DEE9A3B00566786 /* tabBarSettings.swift in Sources */,
+				3D840D5F1DEBE84D003DBD32 /* ViewController.swift in Sources */,
+				3D15329E1E4BF59100992794 /* SettingsViewController.swift in Sources */,
+				3DF82F241E42B9F200FA4C9A /* SleepViewController.swift in Sources */,
+				3DF82F221E42999800FA4C9A /* ProximityDetect.swift in Sources */,
+				3DD371C91E62A93100522378 /* notificationConfiguration.swift in Sources */,
+				3D840D5D1DEBE84D003DBD32 /* AppDelegate.swift in Sources */,
+				3D13E1AF1DF1FCEF00AD7BA0 /* DataStorage.swift in Sources */,
+				3D16BCC21DF8F29500E6A5E0 /* dateConfiguration.swift in Sources */,
+				3D840D651DEBE84D003DBD32 /* LampMindControl.xcdatamodeld in Sources */,
+				3D33B41D1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift in Sources */,
+				3D13E1AD1DF1E05B00AD7BA0 /* SwitchTableViewController.swift in Sources */,
+				3DA95D001E46DCA70080B5AB /* alarmAudioPlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D6C1DEBE84D003DBD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D421BCE1E689F7D0091BB8C /* SleepViewController.swift in Sources */,
+				3D840D751DEBE84D003DBD32 /* LampMindControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D840D771DEBE84D003DBD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D840D801DEBE84D003DBD32 /* LampMindControlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D840D721DEBE84D003DBD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D840D581DEBE84D003DBD32 /* LampMindControl */;
+			targetProxy = 3D840D711DEBE84D003DBD32 /* PBXContainerItemProxy */;
+		};
+		3D840D7D1DEBE84D003DBD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D840D581DEBE84D003DBD32 /* LampMindControl */;
+			targetProxy = 3D840D7C1DEBE84D003DBD32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D840D601DEBE84D003DBD32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D840D611DEBE84D003DBD32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D840D681DEBE84D003DBD32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D840D691DEBE84D003DBD32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D840D821DEBE84D003DBD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "/LampMindControl/LampMindControl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
+			};
+			name = Debug;
+		};
+		3D840D831DEBE84D003DBD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/LampMindControl/LampMindControl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D840D851DEBE84D003DBD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2A197FB0AB91B9F90C263F /* Pods-LampMindControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LampMindControl/LampMindControl.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W7CU97HPW;
+				INFOPLIST_FILE = LampMindControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.williamdu.LampMindControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LampMindControl/LampMindControl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3D840D861DEBE84D003DBD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64D24D4946C11A800136C4A /* Pods-LampMindControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LampMindControl/LampMindControl.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W7CU97HPW;
+				INFOPLIST_FILE = LampMindControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.williamdu.LampMindControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LampMindControl/LampMindControl-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3D840D881DEBE84D003DBD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBEBB3C98A0178C103A291F /* Pods-LampMindControlTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 88667ECK2U;
+				INFOPLIST_FILE = LampMindControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cattail.LampMindControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LampMindControl.app/LampMindControl";
+			};
+			name = Debug;
+		};
+		3D840D891DEBE84D003DBD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F07D74364BC2CE1AE0C11E /* Pods-LampMindControlTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 88667ECK2U;
+				INFOPLIST_FILE = LampMindControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cattail.LampMindControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LampMindControl.app/LampMindControl";
+			};
+			name = Release;
+		};
+		3D840D8B1DEBE84D003DBD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CF51E2AC6954BED6108AA4 /* Pods-LampMindControlUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 88667ECK2U;
+				INFOPLIST_FILE = LampMindControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cattail.LampMindControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = LampMindControl;
+			};
+			name = Debug;
+		};
+		3D840D8C1DEBE84D003DBD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8664193A2E5F46902E6494C /* Pods-LampMindControlUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 88667ECK2U;
+				INFOPLIST_FILE = LampMindControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.cattail.LampMindControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = LampMindControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D840D541DEBE84D003DBD32 /* Build configuration list for PBXProject "LampMindControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D840D821DEBE84D003DBD32 /* Debug */,
+				3D840D831DEBE84D003DBD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D840D841DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D840D851DEBE84D003DBD32 /* Debug */,
+				3D840D861DEBE84D003DBD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D840D871DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D840D881DEBE84D003DBD32 /* Debug */,
+				3D840D891DEBE84D003DBD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D840D8A1DEBE84D003DBD32 /* Build configuration list for PBXNativeTarget "LampMindControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D840D8B1DEBE84D003DBD32 /* Debug */,
+				3D840D8C1DEBE84D003DBD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D840D631DEBE84D003DBD32 /* LampMindControl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D840D641DEBE84D003DBD32 /* LampMindControl.xcdatamodel */,
+			);
+			currentVersion = 3D840D641DEBE84D003DBD32 /* LampMindControl.xcdatamodel */;
+			path = LampMindControl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D840D511DEBE84D003DBD32 /* Project object */;
+}

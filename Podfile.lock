@@ -37,6 +37,14 @@ DEPENDENCIES:
   - Spark-SDK
   - SparkSetup
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - 1PasswordExtension
+    - AFNetworking
+    - AVOSCloud
+    - Spark-SDK
+    - SparkSetup
+
 SPEC CHECKSUMS:
   1PasswordExtension: e775a29310c65851e5a6cec1afc349ab4e334e47
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -46,4 +54,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 268a233743d51370a75f6d190d5d09a77c075c77
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

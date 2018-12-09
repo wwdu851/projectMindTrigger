@@ -64,8 +64,8 @@ class ViewController: UIViewController{
         
         
         /*--- Navigation bar settings ---*/
-        let nav = self.navigationController?.navigationBar
-        nav?.barTintColor = tabBarSettings().tintColor
+//        let nav = self.navigationController?.navigationBar
+//        nav?.barTintColor = tabBarSettings().tintColor
 //        nav?.titleTextAttributes = tabBarSettings().textColor
         
         

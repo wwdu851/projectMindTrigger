@@ -22,7 +22,6 @@ class ViewController: UIViewController{
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
         if device.isProximityMonitoringEnabled {
-//            NotificationCenter.default.addObserver(self, selector: #selector(self.proximityChanged(_:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
             NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device, queue: nil, using: self.proximityChanged)
         }
     }
@@ -55,20 +54,8 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.enableProximitySensor()
-        
-       // self.startButton.backgroundColor = tabBarSettings().tintColor
         self.tabBarController?.tabBar.barTintColor = UIColor.black
         datePicker.isHidden = false
-        startButton.isHidden = false
-        startButton.layer.cornerRadius = 10
-        
-        
-        /*--- Navigation bar settings ---*/
-//        let nav = self.navigationController?.navigationBar
-//        nav?.barTintColor = tabBarSettings().tintColor
-//        nav?.titleTextAttributes = tabBarSettings().textColor
-        
-        
         self.datePicker?.setValue(UIColor.white, forKeyPath: "textColor")
 
         

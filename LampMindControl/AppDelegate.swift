@@ -41,10 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,AVAudioPlayerDelegate{
                 }
             }
         }
-        
-        
-        
-
         return true
     }
     
@@ -67,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,AVAudioPlayerDelegate{
         }
     }
     
-    func proximityChanged(_ notification: Notification) {
+    @objc func proximityChanged(_ notification: Notification) {
         let device = UIDevice.current
         if device.proximityState == true {
             print("Face down")

@@ -31,7 +31,12 @@ class SettingsDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = optionSelectedFromPreviousTableView[rowValue]
+        if sectionValue == 0{
+            self.navigationItem.title = optionSelectedFromPreviousTableView[rowValue]
+        }else{
+            self.navigationItem.title = "Hardware"
+        }
+        
         self.navigationController?.navigationBar.tintColor = UIColor.white
 //        self.navigationController?.navigationBar.titleTextAttributes = tabBarSettings().textColor
 //        self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -123,8 +128,35 @@ class SettingsDetailTableViewController: UITableViewController {
     }
    
     @IBAction func Connect(_ sender: UIButton) {
-        let setupController = SparkSetupMainController()
-        self.present(setupController!, animated: true, completion: nil)
+//        let setupController = SparkSetupMainController()
+//        self.present(setupController!, animated: true, completion: nil)
+        let loginController = UIAlertController(title: "Log In", message: "Please login with Particle Cloud account to activate hardware", preferredStyle: .alert)
+        loginController.addTextField { (textField) in
+            textField.placeholder = "E-mail"
+            textField.keyboardType = .emailAddress
+        }
+        
+        loginController.addTextField { (textField) in
+            textField.placeholder = "Password"
+            textField.isSecureTextEntry = true
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let loginAction = UIAlertAction(title: "Log In", style: .default) { (action) in
+            let emailText = loginController.textFields![0].text ?? "NONE"
+            let passwordText = loginController.textFields![1].text ?? "NONE"
+            
+            if emailText != "NONE" && passwordText != "NONE"{
+                SparkCloud.sharedInstance().login(withUser: emailText, password: passwordText, completion: nil)
+                
+                
+            }
+        }
+        
+        loginController.addAction(cancelAction)
+        loginController.addAction(loginAction)
+        self.present(loginController, animated: true, completion: nil)
+    
     }
     
 

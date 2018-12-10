@@ -23,6 +23,7 @@
 		3D840D6A1DEBE84D003DBD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D840D681DEBE84D003DBD32 /* LaunchScreen.storyboard */; };
 		3D840D751DEBE84D003DBD32 /* LampMindControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D741DEBE84D003DBD32 /* LampMindControlTests.swift */; };
 		3D840D801DEBE84D003DBD32 /* LampMindControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D840D7F1DEBE84D003DBD32 /* LampMindControlUITests.swift */; };
+		3D88819621BE18FD00995A9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D88819521BE18FD00995A9E /* Extensions.swift */; };
 		3D93C21420C5171500622E4D /* ngt.aif in Resources */ = {isa = PBXBuildFile; fileRef = 3D93C21320C5171500622E4D /* ngt.aif */; };
 		3DA507A81EE86F3B00C846D8 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA507A71EE86F3B00C846D8 /* HomeKit.framework */; };
 		3DA95CFC1E46DC560080B5AB /* Guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DA95CFB1E46DC560080B5AB /* Guitar.mp3 */; };
@@ -78,6 +79,7 @@
 		3D840D7B1DEBE84D003DBD32 /* LampMindControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LampMindControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D840D7F1DEBE84D003DBD32 /* LampMindControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampMindControlUITests.swift; sourceTree = "<group>"; };
 		3D840D811DEBE84D003DBD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D88819521BE18FD00995A9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3D93C21320C5171500622E4D /* ngt.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = ngt.aif; sourceTree = "<group>"; };
 		3DA507A71EE86F3B00C846D8 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		3DA507A91EE86F4500C846D8 /* LampMindControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LampMindControl.entitlements; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				3D15329D1E4BF59100992794 /* SettingsViewController.swift */,
 				3D33B41C1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift */,
 				3DD371C81E62A93100522378 /* notificationConfiguration.swift */,
+				3D88819521BE18FD00995A9E /* Extensions.swift */,
 			);
 			path = LampMindControl;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				3D33B41D1E4EDEDC00250B38 /* SettingsDetailTableViewController.swift in Sources */,
 				3D13E1AD1DF1E05B00AD7BA0 /* SwitchTableViewController.swift in Sources */,
 				3DA95D001E46DCA70080B5AB /* alarmAudioPlay.swift in Sources */,
+				3D88819621BE18FD00995A9E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

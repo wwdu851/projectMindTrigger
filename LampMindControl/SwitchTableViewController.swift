@@ -30,22 +30,13 @@ class SwitchTableViewController: UITableViewController{
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let nav = self.navigationController?.navigationBar
-        nav?.barTintColor = tabBarSettings().tintColor
+//        nav?.barTintColor = tabBarSettings().tintColor
 //        nav?.titleTextAttributes = tabBarSettings().textColor
-        self.tableView.tableHeaderView = UIView()
-        self.tableView.tableFooterView = UIView()
-        self.tableView.backgroundColor = tabBarSettings().blackcolor
-//        self.switchoutlet.backgroundColor = .clear
-//        self.switchoutlet.layer.cornerRadius = 5
-//        self.switchoutlet.layer.borderWidth = 1
-//        self.switchoutlet.layer.borderColor = UIColor.black.cgColor
-
         
-       
+        self.tableView.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.1294117647, blue: 0.1411764706, alpha: 1)
+        self.tableView.tableFooterView = UIView()
+
     }
-
-
 
 
     override func didReceiveMemoryWarning() {
@@ -53,10 +44,6 @@ class SwitchTableViewController: UITableViewController{
         // Dispose of any resources that can be recreated.
     }
     
-
-
-
-
     /*
     // MARK: - Navigation
 
@@ -77,10 +64,10 @@ class SwitchTableViewController: UITableViewController{
                 // 3
                 for device in sparkDevices
                 {
-                    if device.name == "mindTrigger"
+                    if device.name == "01"
                     {
                         // 4
-                        device.callFunction("screenIsDown", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                        device.callFunction("turnOnAll", withArguments: ["down"], completion: { (resultCode,error) -> Void in
                             // 5
                             print("Called screen down function on my device")
                         })
@@ -99,10 +86,10 @@ class SwitchTableViewController: UITableViewController{
                 // 3
                 for device in sparkDevices
                 {
-                    if device.name == "mindTrigger"
+                    if device.name == "01"
                     {
                         // 4
-                        device.callFunction("screenIsUp", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                        device.callFunction("turnOffAll", withArguments: ["down"], completion: { (resultCode,error) -> Void in
                             // 5
                             print("Called screen up function on my device")
                         })
@@ -111,8 +98,6 @@ class SwitchTableViewController: UITableViewController{
             }
         }
     }
-    
-
 }
     
     

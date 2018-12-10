@@ -19,21 +19,6 @@ class SettingsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let nav = self.navigationController?.navigationBar
-        nav?.barTintColor = tabBarSettings().tintColor
-//        nav?.titleTextAttributes = tabBarSettings().textColor
-//        let view = UIView()
-//        view.backgroundColor = UIColor(red: 24/255, green: 25/255, blue: 27/255, alpha: 1)
-//        self.tableView.backgroundView = view
-        
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,18 +23,7 @@
                                 <date key="date" timeIntervalSinceReferenceDate="502821924.64748001">
                                     <!--2016-12-07 16:45:24 +0000-->
                                 </date>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip the screen to start sleep mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onk-hc-Eq8">
-                                <rect key="frame" x="39" y="613" width="297" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0r0-MQ-rQ0">
                                 <rect key="frame" x="0.0" y="140" width="375" height="2"/>
                                 <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,16 +31,46 @@
                                     <constraint firstAttribute="height" constant="2" id="iBa-vg-jxS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJB-oM-NaD">
+                                <rect key="frame" x="20" y="604" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yrF-Yn-aTs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Start Sleep Mode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="WBo-fe-NHQ" kind="presentation" identifier="showSleepViewSegue" id="fEA-tb-6m0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpP-g4-N4B">
+                                <rect key="frame" x="10" y="664" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BQb-5e-gLf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Disable Alarm"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="onk-hc-Eq8" firstAttribute="top" secondItem="bh3-Fy-XGv" secondAttribute="bottom" constant="99" id="9U2-1x-NmS"/>
+                            <constraint firstItem="25f-u8-Hfe" firstAttribute="trailing" secondItem="zpP-g4-N4B" secondAttribute="trailing" constant="10" id="924-lp-aec"/>
+                            <constraint firstItem="25f-u8-Hfe" firstAttribute="trailing" secondItem="GJB-oM-NaD" secondAttribute="trailing" constant="20" id="EKn-PT-OlD"/>
+                            <constraint firstItem="zpP-g4-N4B" firstAttribute="leading" secondItem="25f-u8-Hfe" secondAttribute="leading" constant="10" id="Lde-MH-YKD"/>
+                            <constraint firstItem="zpP-g4-N4B" firstAttribute="top" secondItem="GJB-oM-NaD" secondAttribute="bottom" constant="10" id="NX5-8a-kyh"/>
+                            <constraint firstItem="25f-u8-Hfe" firstAttribute="bottom" secondItem="zpP-g4-N4B" secondAttribute="bottom" constant="20" id="bR9-yB-Sgl"/>
                             <constraint firstItem="0r0-MQ-rQ0" firstAttribute="leading" secondItem="25f-u8-Hfe" secondAttribute="leading" id="clu-8v-Yru"/>
                             <constraint firstItem="bh3-Fy-XGv" firstAttribute="centerX" secondItem="25f-u8-Hfe" secondAttribute="centerX" id="dO6-PR-cw6"/>
-                            <constraint firstItem="onk-hc-Eq8" firstAttribute="centerX" secondItem="25f-u8-Hfe" secondAttribute="centerX" id="dsK-Kr-0c5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bh3-Fy-XGv" secondAttribute="trailing" id="fAg-Fw-OFb"/>
-                            <constraint firstItem="25f-u8-Hfe" firstAttribute="bottom" secondItem="onk-hc-Eq8" secondAttribute="bottom" constant="95" id="gx9-P2-v2u"/>
+                            <constraint firstItem="GJB-oM-NaD" firstAttribute="leading" secondItem="25f-u8-Hfe" secondAttribute="leading" constant="20" id="k3E-ga-DvR"/>
                             <constraint firstItem="0r0-MQ-rQ0" firstAttribute="top" secondItem="25f-u8-Hfe" secondAttribute="top" id="nZz-eW-DCI"/>
                             <constraint firstItem="bh3-Fy-XGv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pis-sF-y54"/>
                             <constraint firstItem="bh3-Fy-XGv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rZu-3z-zBc"/>
@@ -62,8 +81,6 @@
                     <navigationItem key="navigationItem" title="Alarm" largeTitleDisplayMode="always" id="8sK-HB-IiK"/>
                     <connections>
                         <outlet property="datePicker" destination="bh3-Fy-XGv" id="nok-dq-uvj"/>
-                        <outlet property="text" destination="onk-hc-Eq8" id="KHl-2D-LxG"/>
-                        <segue destination="WBo-fe-NHQ" kind="showDetail" identifier="newDetailSegue" id="RhO-gw-P6d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -80,15 +97,20 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JK-Ki-N10">
                                 <rect key="frame" x="36" y="703" width="303" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="QQn-hl-DER"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Hold To Cancel Alarm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="cancelBtnPressed:" destination="WBo-fe-NHQ" eventType="touchUpInside" id="eeg-dP-MSm"/>
                                     <outletCollection property="gestureRecognizers" destination="Urm-eu-iRx" appends="YES" id="4JU-SZ-AlU"/>
@@ -96,25 +118,30 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeH-vt-va0">
                                 <rect key="frame" x="36" y="643" width="303" height="45"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="4Kf-B4-u6D"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Change Alarm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="changeButtonTapped:" destination="WBo-fe-NHQ" eventType="touchUpInside" id="GSU-La-bZf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:09 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6P-bB-puj">
-                                <rect key="frame" x="36" y="94" width="303" height="84"/>
+                                <rect key="frame" x="26" y="74" width="323" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="muj-2J-Qfm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -125,12 +152,12 @@
                                 </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUB-k9-GiS">
-                                <rect key="frame" x="36" y="183" width="343" height="25"/>
+                                <rect key="frame" x="26" y="163" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="kAS-vb-TmU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.76470588240000004" green="0.7843137255" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-qU-kUO">
@@ -139,6 +166,12 @@
                                 <color key="progressTintColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip the screen to turn off appliances" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjT-ci-iaL">
+                                <rect key="frame" x="40" y="590" width="295" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.76470588240000004" green="0.7843137255" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -147,20 +180,23 @@
                             <constraint firstItem="SeH-vt-va0" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="20" id="0o6-pH-hTV"/>
                             <constraint firstItem="3kU-qU-kUO" firstAttribute="top" secondItem="lir-D6-zUc" secondAttribute="top" constant="20" id="1WS-3Q-FIn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5JK-Ki-N10" secondAttribute="trailing" constant="20" id="2zU-JZ-7at"/>
-                            <constraint firstItem="UUB-k9-GiS" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="20" id="FgE-ol-Oqg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s6P-bB-puj" secondAttribute="trailing" constant="20" id="H6T-gy-fTd"/>
+                            <constraint firstItem="lir-D6-zUc" firstAttribute="trailing" secondItem="JjT-ci-iaL" secondAttribute="trailing" constant="40" id="8PV-tf-cqK"/>
+                            <constraint firstItem="UUB-k9-GiS" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="10" id="FgE-ol-Oqg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s6P-bB-puj" secondAttribute="trailing" constant="10" id="H6T-gy-fTd"/>
                             <constraint firstItem="5JK-Ki-N10" firstAttribute="top" secondItem="SeH-vt-va0" secondAttribute="bottom" constant="15" id="L53-jX-Xhs"/>
                             <constraint firstItem="UUB-k9-GiS" firstAttribute="top" secondItem="s6P-bB-puj" secondAttribute="bottom" constant="5" id="Llc-XE-AA0"/>
+                            <constraint firstItem="JjT-ci-iaL" firstAttribute="leading" secondItem="lir-D6-zUc" secondAttribute="leading" constant="40" id="Rmt-US-hdg"/>
                             <constraint firstItem="3kU-qU-kUO" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="-20" id="VCe-e1-NMt"/>
                             <constraint firstItem="xDn-H6-t74" firstAttribute="centerY" secondItem="DHk-cs-4Lo" secondAttribute="centerY" id="Wn2-LH-aGy"/>
                             <constraint firstItem="5JK-Ki-N10" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="20" id="YQJ-v2-VoJ"/>
                             <constraint firstItem="lir-D6-zUc" firstAttribute="trailing" secondItem="xDn-H6-t74" secondAttribute="trailing" id="Yy0-9p-g23"/>
+                            <constraint firstItem="SeH-vt-va0" firstAttribute="top" secondItem="JjT-ci-iaL" secondAttribute="bottom" constant="10" id="bBp-Tl-WuW"/>
                             <constraint firstItem="xDn-H6-t74" firstAttribute="leading" secondItem="lir-D6-zUc" secondAttribute="leading" id="bdN-F1-e1L"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SeH-vt-va0" secondAttribute="trailing" constant="20" id="jzI-y1-eB3"/>
-                            <constraint firstItem="s6P-bB-puj" firstAttribute="top" secondItem="lir-D6-zUc" secondAttribute="top" constant="50" id="o0P-68-Zyq"/>
+                            <constraint firstItem="s6P-bB-puj" firstAttribute="top" secondItem="lir-D6-zUc" secondAttribute="top" constant="30" id="o0P-68-Zyq"/>
                             <constraint firstItem="lir-D6-zUc" firstAttribute="bottom" secondItem="5JK-Ki-N10" secondAttribute="bottom" constant="30" id="pt1-yF-qVM"/>
-                            <constraint firstItem="s6P-bB-puj" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="20" id="uTj-xZ-PhV"/>
-                            <constraint firstItem="UUB-k9-GiS" firstAttribute="trailing" secondItem="DHk-cs-4Lo" secondAttribute="trailingMargin" constant="20" id="wTa-4N-YCJ"/>
+                            <constraint firstItem="s6P-bB-puj" firstAttribute="leading" secondItem="DHk-cs-4Lo" secondAttribute="leadingMargin" constant="10" id="uTj-xZ-PhV"/>
+                            <constraint firstItem="UUB-k9-GiS" firstAttribute="trailing" secondItem="DHk-cs-4Lo" secondAttribute="trailingMargin" constant="10" id="wTa-4N-YCJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3kU-qU-kUO" secondAttribute="trailing" constant="-20" id="yuT-6K-xLO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lir-D6-zUc"/>
@@ -172,7 +208,7 @@
                         <outlet property="progressBar" destination="3kU-qU-kUO" id="apk-ae-U4k"/>
                         <outlet property="sleepDatePicker" destination="xDn-H6-t74" id="iq2-DA-AVb"/>
                         <outlet property="timeDisplay" destination="s6P-bB-puj" id="ae3-fG-ZJu"/>
-                        <segue destination="9fe-5X-aef" kind="unwind" identifier="exitSleepView" unwindAction="unwindToMainMenuWithSender:" id="yx3-bu-nQ8"/>
+                        <segue destination="9fe-5X-aef" kind="unwind" identifier="exitToMainScreen" unwindAction="unwindToMainViewController:" id="zpR-pQ-UUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4p-NG-zJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,7 +219,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1754" y="-546"/>
+            <point key="canvasLocation" x="1753.125" y="-546.12676056338034"/>
         </scene>
         <!--Alarm-->
         <scene sceneID="hpU-Bu-HRX">
@@ -211,7 +247,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XvE-wB-IOG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="kEH-oj-tgn">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="kEH-oj-tgn">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

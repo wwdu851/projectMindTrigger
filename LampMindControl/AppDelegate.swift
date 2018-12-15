@@ -82,9 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,AVAudioPlayerDelegate{
     func disableProximitySensor () {
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = false
-        if device.isProximityMonitoringEnabled == false {
             print("Proximity Sensing disabled")
-        }
     }
     
     /*------Proximity Sensor Functions End----------*/

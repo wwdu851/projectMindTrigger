@@ -69,7 +69,7 @@ class SwitchTableViewController: UITableViewController{
                         // 4
                         device.callFunction("turnOnAll", withArguments: ["down"], completion: { (resultCode,error) -> Void in
                             // 5
-                            print("Called screen down function on my device")
+                            print("Turn On All Function Called")
                         })
                     }
                 }
@@ -91,7 +91,7 @@ class SwitchTableViewController: UITableViewController{
                         // 4
                         device.callFunction("turnOffAll", withArguments: ["down"], completion: { (resultCode,error) -> Void in
                             // 5
-                            print("Called screen up function on my device")
+                            print("Turn Off All Function Called")
                         })
                     }
                 }

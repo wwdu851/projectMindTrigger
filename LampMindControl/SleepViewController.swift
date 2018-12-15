@@ -45,8 +45,6 @@ class SleepViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cancelBtn.layer.cornerRadius = 10
-        changeBtn.layer.cornerRadius = 10
         self.sleepDatePicker.isHidden = true
         // Do any additional setup after loading the view.
         self.sleepDatePicker.setValue(UIColor.white, forKey: "textColor")
@@ -88,73 +86,52 @@ class SleepViewController: UIViewController {
                 break
         }
         
-        self.enableProximitySensor()
+        self.enableProximitySensor(enabled: true)
+    }
+    
+    func sendParticleData(screenOn: Bool) {
+        SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
+            // 2
+            if let sparkDevices = sparkDevicesList{
+                print(sparkDevices)
+                for device in sparkDevices
+                {
+                    if device.name == "01"
+                    {
+                        if screenOn == true{
+                            device.callFunction("screenOn", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                                print("Screen On Function Called")
+                            })
+                        }else{
+                            device.callFunction("screenOff", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                                print("Screen Off Function Called")
+                            })
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
         
 
-    func enableProximitySensor (){
+    func enableProximitySensor(enabled: Bool) {
         let device = UIDevice.current
-        device.isProximityMonitoringEnabled = true
+        device.isProximityMonitoringEnabled = enabled
         if device.isProximityMonitoringEnabled {
-            NotificationCenter.default.addObserver(self, selector: #selector(self.proximityChanged(_:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
+            NotificationCenter.default.addObserver(self, selector: #selector(proximityChanged), name: .UIDeviceProximityStateDidChange, object: device)
+        } else {
+            NotificationCenter.default.removeObserver(self, name: .UIDeviceProximityStateDidChange, object: nil)
         }
     }
     
-    func proximityChanged(_ notification: Notification) {
-        let device = UIDevice.current
-        if device.proximityState == true {
-            print("Face down")
-            SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
-                // 2
-                if let sparkDevices = sparkDevicesList
-                {
-                    print(sparkDevices)
-                    // 3
-                    for device in sparkDevices
-                    {
-                        if device.name == "mindTrigger"
-                        {
-                            // 4
-                            device.callFunction("screenIsDown", withArguments: ["down"], completion: { (resultCode,error) -> Void in
-                                // 5
-                                print("Called screen down function on my device")
-                            })
-                        }
-                    }
-                }
+    @objc func proximityChanged(_ notification: Notification) {
+        if let device = notification.object as? UIDevice {
+            if device.proximityState == true {
+                sendParticleData(screenOn: false)
+            }else{
+                sendParticleData(screenOn: true)
             }
-        }else if device.proximityState == false{
-            print("Face up")
-            SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
-                // 2
-                if let sparkDevices = sparkDevicesList{
-                    print(sparkDevices)
-                    // 3
-                    for device in sparkDevices
-                    {
-                        if device.name == "mindTrigger"
-                        {
-                            // 4
-                            device.callFunction("screenIsUp", withArguments: ["down"], completion: { (resultCode,error) -> Void in
-                                // 5
-                                print("Called screen up function on my device")
-                            })
-                        }
-                    }
-                }
-            }
-        }
-        
-        
-        
-    }
-    
-    func disableProximitySensor () {
-        NotificationCenter.default.removeObserver(self)
-        let device = UIDevice.current
-        device.isProximityMonitoringEnabled = false
-        if device.isProximityMonitoringEnabled == false {
-            print("Proximity Sensing disabled")
         }
     }
     
@@ -192,20 +169,6 @@ class SleepViewController: UIViewController {
         
     }
     
-    
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == ("exitSleepView"){
-            let destVC = segue.destination as! ViewController
-            destVC.enableProximitySensor()
-        }
-        
-    }
  
     
     
@@ -244,34 +207,29 @@ class SleepViewController: UIViewController {
         print("removed")
         timer.invalidate()
         progressTimer.invalidate()
-        self.disableProximitySensor()
+        self.enableProximitySensor(enabled: false)
+        delegate.alarmTriggered = false
         SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
             // 2
-            if let sparkDevices = sparkDevicesList
-            {
+            if let sparkDevices = sparkDevicesList{
                 print(sparkDevices)
-                // 3
                 for device in sparkDevices
                 {
-                    if device.name == "mindTrigger"
+                    if device.name == "01"
                     {
-                        // 4
-                        device.callFunction("alarmClose", withArguments: ["alarmClose"], completion: { (resultCode,error) -> Void in
-                            // 5
-                            print("Called Alarm Close Function")
+                        device.callFunction("sleepModeOff", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                            print("Sleep Mode Turned Off")
                         })
                     }
                 }
             }
         }
-        self.performSegue(withIdentifier: "exitSleepView", sender: nil)
-        delegate.alarmTriggered = false
+        self.performSegue(withIdentifier: "exitToMainScreen", sender: nil)
         
     }
 
     @IBAction func cancelBtnPressed(_ sender: UIButton) {
-        self.cancelBtn.setTitle("HOLD To Cancel Alarm", for: .normal)
-        
+        self.cancelBtn.setTitle("HOLD TO CANCEL ALARM", for: .normal)
     }
     
     

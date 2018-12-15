@@ -7,61 +7,22 @@
 //
 
 import UIKit
+import Spark_SDK
+import SparkSetup
 import UserNotifications
 
 class ViewController: UIViewController{
     let formater = DateFormatter()
     
-    @IBOutlet weak var startButton: UIButton!
+    
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var text: UILabel!
-    
-    
-    
-    func enableProximitySensor (){
-        let device = UIDevice.current
-        device.isProximityMonitoringEnabled = true
-        if device.isProximityMonitoringEnabled {
-            NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device, queue: nil, using: self.proximityChanged)
-        }
-    }
-    
-    func proximityChanged(_ notification: Notification) {
-        let device = UIDevice.current
-        if device.proximityState == true {
-            print("Face down")
-            NotificationCenter.default.removeObserver(self)
-            print("Observer Removed")
-            print("Prepared for segue")
-            self.scheduleLocalNotification(date: dateConfiguration().config(date: self.datePicker.date))
-            disableProximitySensor()
-            print("Scheduled")
-            self.performSegue(withIdentifier: "newDetailSegue", sender: nil)
-        }
-    }
-    
-    func disableProximitySensor () {
-        let device = UIDevice.current
-        device.isProximityMonitoringEnabled = false
-        if device.isProximityMonitoringEnabled == false {
-            print("Proximity Sensing disabled")
-        }
-    }
-    
-    let appdelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.enableProximitySensor()
-        self.tabBarController?.tabBar.barTintColor = UIColor.black
-        datePicker.isHidden = false
-        self.datePicker?.setValue(UIColor.white, forKeyPath: "textColor")
-
-        
-
+        datePicker.setValue(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), forKey: "textColor")
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -84,16 +45,29 @@ class ViewController: UIViewController{
         
     }
     
-    @IBAction func unwindToMainMenu(sender:UIStoryboardSegue){
-        
-    }
-    
+    @IBAction func unwindToMainViewController(_ sender:UIStoryboardSegue) { }
     
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "newDetailSegue"){
+        self.scheduleLocalNotification(date: dateConfiguration().config(date: self.datePicker.date))
+        SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
+            // 2
+            if let sparkDevices = sparkDevicesList{
+                print(sparkDevices)
+                for device in sparkDevices
+                {
+                    if device.name == "01"
+                    {
+                        device.callFunction("sleepModeOn", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                            print("Sleep Mode On")
+                        })
+                    }
+                }
+            }
+        }
+        if (segue.identifier == "showSleepViewSegue"){
             if let destVC = segue.destination as? SleepViewController{
                 switch NSLocale.current.identifier {
                 case "zh_CN":
@@ -115,21 +89,6 @@ class ViewController: UIViewController{
      // Pass the selected object to the new view controller.
      }
     
-    
-    
-    @IBAction func changeAlarm(_ sender: UIButton) {
-
-    }
-    
-    
-    @IBAction func enable(_ sender: UIButton) {
-        let device = UIDevice.current
-        device.isProximityMonitoringEnabled = true
-    }
- 
-    
-    
-
 
 }
 

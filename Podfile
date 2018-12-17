@@ -7,7 +7,6 @@ target 'LampMindControl' do
 
   # Pods for LampMindControl
 
-pod 'AVOSCloud'
 
 pod 'SparkSetup'
 

@@ -1,0 +1,96 @@
+
+/* Class = "UILabel"; text = "On"; ObjectID = "0DB-p8-nP3"; */
+"0DB-p8-nP3.text" = "On";
+
+/* Class = "UIButton"; normalTitle = "Turn On"; ObjectID = "0uQ-Nl-oR2"; */
+"0uQ-Nl-oR2.normalTitle" = "Turn On";
+
+/* Class = "UITableViewController"; title = "Settings"; ObjectID = "0zd-wf-C4R"; */
+"0zd-wf-C4R.title" = "Settings";
+
+/* Class = "UILabel"; text = "Vibration"; ObjectID = "1ly-gY-56V"; */
+"1ly-gY-56V.text" = "Vibration";
+
+/* Class = "UIButton"; normalTitle = "Turn Off"; ObjectID = "59P-WN-PIh"; */
+"59P-WN-PIh.normalTitle" = "Turn Off";
+
+/* Class = "UIButton"; normalTitle = "Hold To Cancel Alarm"; ObjectID = "5JK-Ki-N10"; */
+"5JK-Ki-N10.normalTitle" = "Hold To Cancel Alarm";
+
+/* Class = "UILabel"; text = "Snooze"; ObjectID = "6am-Na-qum"; */
+"6am-Na-qum.text" = "Snooze";
+
+/* Class = "UINavigationItem"; title = "Alarm"; ObjectID = "8sK-HB-IiK"; */
+"8sK-HB-IiK.title" = "Alarm";
+
+/* Class = "UILabel"; text = "Outlet"; ObjectID = "CLo-QI-6xg"; */
+"CLo-QI-6xg.text" = "Outlet";
+
+/* Class = "UIButton"; normalTitle = "Start Sleep Mode"; ObjectID = "GJB-oM-NaD"; */
+"GJB-oM-NaD.normalTitle" = "Start Sleep Mode";
+
+/* Class = "UILabel"; text = "Connected"; ObjectID = "I90-WZ-zCb"; */
+"I90-WZ-zCb.text" = "Connected";
+
+/* Class = "UILabel"; text = "Flip the screen to turn off appliances"; ObjectID = "JjT-ci-iaL"; */
+"JjT-ci-iaL.text" = "Flip the screen to turn off appliances";
+
+/* Class = "UITableViewSection"; headerTitle = "Alarm Settings"; ObjectID = "Jvn-Cn-cbp"; */
+"Jvn-Cn-cbp.headerTitle" = "Alarm Settings";
+
+/* Class = "UITabBarItem"; title = "Alarm"; ObjectID = "LtP-7M-0mG"; */
+"LtP-7M-0mG.title" = "Alarm";
+
+/* Class = "UITabBarItem"; title = "Appliances"; ObjectID = "Ngu-lN-PbL"; */
+"Ngu-lN-PbL.title" = "Appliances";
+
+/* Class = "UILabel"; text = "Guitar"; ObjectID = "Pww-0F-7iU"; */
+"Pww-0F-7iU.text" = "Guitar";
+
+/* Class = "UIButton"; normalTitle = "Change Alarm"; ObjectID = "SeH-vt-va0"; */
+"SeH-vt-va0.normalTitle" = "Change Alarm";
+
+/* Class = "UILabel"; text = "Alarm "; ObjectID = "UUB-k9-GiS"; */
+"UUB-k9-GiS.text" = "Alarm ";
+
+/* Class = "UITableViewSection"; headerTitle = "About"; ObjectID = "XAY-Aw-XiS"; */
+"XAY-Aw-XiS.headerTitle" = "About";
+
+/* Class = "UILabel"; text = "Sound"; ObjectID = "a1R-rp-jde"; */
+"a1R-rp-jde.text" = "Sound";
+
+/* Class = "UILabel"; text = "Version Beta 1.1"; ObjectID = "c94-JL-5m0"; */
+"c94-JL-5m0.text" = "Version Beta 1.1";
+
+/* Class = "UIButton"; normalTitle = "Connect with Hardware"; ObjectID = "cMd-9r-Cgt"; */
+"cMd-9r-Cgt.normalTitle" = "Connect with Hardware";
+
+/* Class = "UINavigationItem"; title = "Appliances"; ObjectID = "dVn-vA-kvl"; */
+"dVn-vA-kvl.title" = "Appliances";
+
+/* Class = "UILabel"; text = "Off"; ObjectID = "eHT-gX-tqd"; */
+"eHT-gX-tqd.text" = "Off";
+
+/* Class = "UILabel"; text = "Connect"; ObjectID = "g3X-DY-s4M"; */
+"g3X-DY-s4M.text" = "Connect";
+
+/* Class = "UITableViewController"; title = "Sound"; ObjectID = "j0i-2Y-gFE"; */
+"j0i-2Y-gFE.title" = "Sound";
+
+/* Class = "UITableViewSection"; headerTitle = "Hardware Connection"; ObjectID = "nii-XZ-kF6"; */
+"nii-XZ-kF6.headerTitle" = "Hardware Connection";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "oYW-Ac-Fs0"; */
+"oYW-Ac-Fs0.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "q7P-BQ-nYg"; */
+"q7P-BQ-nYg.title" = "Settings";
+
+/* Class = "UILabel"; text = "10:09 PM"; ObjectID = "s6P-bB-puj"; */
+"s6P-bB-puj.text" = "10:09 PM";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "xsB-CL-7uu"; */
+"xsB-CL-7uu.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Disable Alarm"; ObjectID = "zpP-g4-N4B"; */
+"zpP-g4-N4B.normalTitle" = "Disable Alarm";

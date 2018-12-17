@@ -1,96 +1,98 @@
 
 /* Class = "UILabel"; text = "On"; ObjectID = "0DB-p8-nP3"; */
-"0DB-p8-nP3.text" = "On";
+"0DB-p8-nP3.text" = "开";
 
 /* Class = "UIButton"; normalTitle = "Turn On"; ObjectID = "0uQ-Nl-oR2"; */
-"0uQ-Nl-oR2.normalTitle" = "Turn On";
+"0uQ-Nl-oR2.normalTitle" = "打开";
 
 /* Class = "UITableViewController"; title = "Settings"; ObjectID = "0zd-wf-C4R"; */
-"0zd-wf-C4R.title" = "Settings";
+"0zd-wf-C4R.title" = "设置";
 
 /* Class = "UILabel"; text = "Vibration"; ObjectID = "1ly-gY-56V"; */
-"1ly-gY-56V.text" = "Vibration";
+"1ly-gY-56V.text" = "震动";
 
 /* Class = "UIButton"; normalTitle = "Turn Off"; ObjectID = "59P-WN-PIh"; */
-"59P-WN-PIh.normalTitle" = "Turn Off";
+"59P-WN-PIh.normalTitle" = "关闭";
 
 /* Class = "UIButton"; normalTitle = "Hold To Cancel Alarm"; ObjectID = "5JK-Ki-N10"; */
-"5JK-Ki-N10.normalTitle" = "Hold To Cancel Alarm";
+"5JK-Ki-N10.normalTitle" = "长按取消闹钟";
 
 /* Class = "UILabel"; text = "Snooze"; ObjectID = "6am-Na-qum"; */
-"6am-Na-qum.text" = "Snooze";
+"6am-Na-qum.text" = "小睡";
 
 /* Class = "UINavigationItem"; title = "Alarm"; ObjectID = "8sK-HB-IiK"; */
-"8sK-HB-IiK.title" = "Alarm";
+"8sK-HB-IiK.title" = "闹钟";
 
 /* Class = "UILabel"; text = "Outlet"; ObjectID = "CLo-QI-6xg"; */
-"CLo-QI-6xg.text" = "Outlet";
+"CLo-QI-6xg.text" = "插座";
 
 /* Class = "UIButton"; normalTitle = "Start Sleep Mode"; ObjectID = "GJB-oM-NaD"; */
-"GJB-oM-NaD.normalTitle" = "Start Sleep Mode";
+"GJB-oM-NaD.normalTitle" = "开启睡眠模式";
 
 /* Class = "UILabel"; text = "Connected"; ObjectID = "I90-WZ-zCb"; */
-"I90-WZ-zCb.text" = "Connected";
+"I90-WZ-zCb.text" = "已连接";
 
 /* Class = "UILabel"; text = "Flip the screen to turn off appliances"; ObjectID = "JjT-ci-iaL"; */
-"JjT-ci-iaL.text" = "Flip the screen to turn off appliances";
+"JjT-ci-iaL.text" = "将手机倒置以关闭电器";
 
 /* Class = "UITableViewSection"; headerTitle = "Alarm Settings"; ObjectID = "Jvn-Cn-cbp"; */
-"Jvn-Cn-cbp.headerTitle" = "Alarm Settings";
+"Jvn-Cn-cbp.headerTitle" = "闹钟设置";
 
 /* Class = "UITabBarItem"; title = "Alarm"; ObjectID = "LtP-7M-0mG"; */
-"LtP-7M-0mG.title" = "Alarm";
+"LtP-7M-0mG.title" = "闹钟";
 
 /* Class = "UITabBarItem"; title = "Appliances"; ObjectID = "Ngu-lN-PbL"; */
-"Ngu-lN-PbL.title" = "Appliances";
+"Ngu-lN-PbL.title" = "电器";
 
 /* Class = "UILabel"; text = "Guitar"; ObjectID = "Pww-0F-7iU"; */
-"Pww-0F-7iU.text" = "Guitar";
+"Pww-0F-7iU.text" = "吉他";
 
 /* Class = "UIButton"; normalTitle = "Change Alarm"; ObjectID = "SeH-vt-va0"; */
-"SeH-vt-va0.normalTitle" = "Change Alarm";
+"SeH-vt-va0.normalTitle" = "更改闹钟";
 
 /* Class = "UILabel"; text = "Alarm "; ObjectID = "UUB-k9-GiS"; */
-"UUB-k9-GiS.text" = "Alarm ";
+"UUB-k9-GiS.text" = "闹钟 ";
 
 /* Class = "UITableViewSection"; headerTitle = "About"; ObjectID = "XAY-Aw-XiS"; */
-"XAY-Aw-XiS.headerTitle" = "About";
+"XAY-Aw-XiS.headerTitle" = "关于";
 
 /* Class = "UILabel"; text = "Sound"; ObjectID = "a1R-rp-jde"; */
-"a1R-rp-jde.text" = "Sound";
+"a1R-rp-jde.text" = "音效";
 
 /* Class = "UILabel"; text = "Version Beta 1.1"; ObjectID = "c94-JL-5m0"; */
-"c94-JL-5m0.text" = "Version Beta 1.1";
+"c94-JL-5m0.text" = "版本 测试1.1";
 
 /* Class = "UIButton"; normalTitle = "Connect with Hardware"; ObjectID = "cMd-9r-Cgt"; */
-"cMd-9r-Cgt.normalTitle" = "Connect with Hardware";
+"cMd-9r-Cgt.normalTitle" = "连接电器开关";
 
 /* Class = "UINavigationItem"; title = "Appliances"; ObjectID = "dVn-vA-kvl"; */
-"dVn-vA-kvl.title" = "Appliances";
+"dVn-vA-kvl.title" = "电器";
 
 /* Class = "UILabel"; text = "Off"; ObjectID = "eHT-gX-tqd"; */
-"eHT-gX-tqd.text" = "Off";
+"eHT-gX-tqd.text" = "关闭";
 
 /* Class = "UILabel"; text = "Connect"; ObjectID = "g3X-DY-s4M"; */
-"g3X-DY-s4M.text" = "Connect";
+"g3X-DY-s4M.text" = "连接";
 
 /* Class = "UITableViewController"; title = "Sound"; ObjectID = "j0i-2Y-gFE"; */
-"j0i-2Y-gFE.title" = "Sound";
+"j0i-2Y-gFE.title" = "音效";
 
 /* Class = "UITableViewSection"; headerTitle = "Hardware Connection"; ObjectID = "nii-XZ-kF6"; */
-"nii-XZ-kF6.headerTitle" = "Hardware Connection";
+"nii-XZ-kF6.headerTitle" = "硬件连接";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "oYW-Ac-Fs0"; */
-"oYW-Ac-Fs0.title" = "Settings";
+"oYW-Ac-Fs0.title" = "设置";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "q7P-BQ-nYg"; */
-"q7P-BQ-nYg.title" = "Settings";
+"q7P-BQ-nYg.title" = "设置";
 
 /* Class = "UILabel"; text = "10:09 PM"; ObjectID = "s6P-bB-puj"; */
 "s6P-bB-puj.text" = "10:09 PM";
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "xsB-CL-7uu"; */
-"xsB-CL-7uu.title" = "Back";
+"xsB-CL-7uu.title" = "返回";
 
 /* Class = "UIButton"; normalTitle = "Disable Alarm"; ObjectID = "zpP-g4-N4B"; */
-"zpP-g4-N4B.normalTitle" = "Disable Alarm";
+"zpP-g4-N4B.normalTitle" = "取消闹钟";
+
+

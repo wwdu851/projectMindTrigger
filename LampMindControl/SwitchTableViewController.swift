@@ -98,6 +98,50 @@ class SwitchTableViewController: UITableViewController{
             }
         }
     }
+    
+    @IBAction func turnOnBedOccupancySensor(_ sender: UIButton) {
+        SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
+            // 2
+            if let sparkDevices = sparkDevicesList{
+                print(sparkDevices)
+                // 3
+                for device in sparkDevices
+                {
+                    if device.name == "01"
+                    {
+                        // 4
+                        device.callFunction("bedOccOn", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                            // 5
+                            print("turnOnBedOccupancySensor Function Called")
+                        })
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func turnOffBedOccupancySensor(_ sender: UIButton) {
+        SparkCloud.sharedInstance().getDevices { (sparkDevicesList : [SparkDevice]?, error :Error?) -> Void in
+            // 2
+            if let sparkDevices = sparkDevicesList{
+                print(sparkDevices)
+                // 3
+                for device in sparkDevices
+                {
+                    if device.name == "01"
+                    {
+                        // 4
+                        device.callFunction("bedOccOff", withArguments: ["down"], completion: { (resultCode,error) -> Void in
+                            // 5
+                            print("turnOffBedOccupancySensor Function Called")
+                        })
+                    }
+                }
+            }
+        }
+    }
+    
 }
     
     

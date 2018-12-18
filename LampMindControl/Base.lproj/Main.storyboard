@@ -141,7 +141,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="muj-2J-Qfm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -583,6 +583,72 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="zTJ-Fm-vm2">
+                                        <rect key="frame" x="0.0" y="182" width="375" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zTJ-Fm-vm2" id="lDd-wD-Fer">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bed Occupancy Sensor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5up-Ve-3ev">
+                                                    <rect key="frame" x="26" y="21" width="323" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iD-Hy-NM8">
+                                                    <rect key="frame" x="26" y="55" width="323" height="50"/>
+                                                    <color key="backgroundColor" red="0.3921568627" green="0.0" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="HQ5-Xc-Ohu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="Turn On">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="turnOnBedOccupancySensor:" destination="vDf-cR-cJa" eventType="touchUpInside" id="2o9-UP-B7h"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHD-4V-8J6">
+                                                    <rect key="frame" x="26" y="115" width="323" height="50"/>
+                                                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="56x-qH-LFU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="Turn Off">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="turnOffBedOccupancySensor:" destination="vDf-cR-cJa" eventType="touchUpInside" id="Lqg-Ah-h7C"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8iD-Hy-NM8" firstAttribute="top" secondItem="5up-Ve-3ev" secondAttribute="bottom" constant="10" id="2vD-6M-qVo"/>
+                                                <constraint firstItem="5up-Ve-3ev" firstAttribute="top" secondItem="lDd-wD-Fer" secondAttribute="topMargin" constant="10" id="8W3-1Z-OUX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zHD-4V-8J6" secondAttribute="trailing" constant="10" id="HFd-BF-Zu9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8iD-Hy-NM8" secondAttribute="trailing" constant="10" id="NGG-y6-BKt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5up-Ve-3ev" secondAttribute="trailing" constant="10" id="T6b-8h-hpD"/>
+                                                <constraint firstItem="8iD-Hy-NM8" firstAttribute="leading" secondItem="lDd-wD-Fer" secondAttribute="leadingMargin" constant="10" id="hlS-be-XQO"/>
+                                                <constraint firstItem="5up-Ve-3ev" firstAttribute="leading" secondItem="lDd-wD-Fer" secondAttribute="leadingMargin" constant="10" id="qRt-aa-Ahd"/>
+                                                <constraint firstItem="zHD-4V-8J6" firstAttribute="top" secondItem="8iD-Hy-NM8" secondAttribute="bottom" constant="10" id="qVv-pa-go5"/>
+                                                <constraint firstItem="zHD-4V-8J6" firstAttribute="leading" secondItem="lDd-wD-Fer" secondAttribute="leadingMargin" constant="10" id="sQK-ZT-red"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12129447609186172" green="0.12922456860542297" blue="0.14169979095458984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
